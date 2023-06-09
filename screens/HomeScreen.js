@@ -7,15 +7,18 @@ import ListItem from '../components/listItem';
 import HorizontalList from '../components/horizontalList';
 const data = require('../Recetas.json')
 
-export default function HomeScreen(){
+export default function HomeScreen({navigation}){
+  const onPress = (item) => {
+    navigation.navigate('Detalle',{item});
+  }
   return(
     <SafeAreaView style={styles.container}>
       <StatusBar style='auto'/>
       <SearchBar
         placeholder="What do you want to eat?"
       />
-      <HorizontalList data={data.recetas} titulo={"TRENDING"} imgHeight={115} imgWidth={115}/>
-      <HorizontalList data={data.recetas} titulo={"RECENT"} imgHeight={190} imgWidth={170}/>
+      <HorizontalList data={data.recetas} titulo={"TRENDING"} imgHeight={115} imgWidth={115} onPressItem={onPress} />
+      <HorizontalList data={data.recetas} titulo={"RECENT"} imgHeight={190} imgWidth={170} onPressItem={onPress} />
     </SafeAreaView>
   ); 
 }

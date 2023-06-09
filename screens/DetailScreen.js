@@ -1,7 +1,7 @@
 import react from "react";
 import { Text, View } from "react-native";
 
-function DetailScreen(){
+function DetailScreen({route, navigation}){
     return(
       <View>
         <Text>recetas bergas</Text>
