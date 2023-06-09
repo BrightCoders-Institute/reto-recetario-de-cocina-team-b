@@ -1,0 +1,50 @@
+{
+  "recetas": [
+    {
+      "id": "1",
+      "nombre": "",
+      "foto": "",
+      "ingredientes": "",
+      "preparacion": ""
+    },
+    {
+      "id": "2",
+      "nombre": "",
+      "foto": "",
+      "ingredientes": "",
+      "preparacion": ""
+    },
+
+    {
+      "id": "3",
+      "nombre": "",
+      "foto": "",
+      "ingredientes": "",
+      "preparacion": ""
+    },
+
+    {
+      "id": "4",
+      "nombre": "",
+      "foto": "",
+      "ingredientes": "",
+      "preparacion": ""
+    },
+
+    {
+      "id": "5",
+      "nombre": "",
+      "foto": "",
+      "ingredientes": "",
+      "preparacion": ""
+    },
+
+    {
+      "id": "6",
+      "nombre": "",
+      "foto": "",
+      "ingredientes": "",
+      "preparacion": ""
+    }
+  ]
+}
