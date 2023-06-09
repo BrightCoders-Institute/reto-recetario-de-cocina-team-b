@@ -4,6 +4,8 @@ const { StatusBarManager } = NativeModules;
 import { StatusBar } from 'expo-status-bar';
 import { SearchBar } from '@rneui/themed';
 import ListItem from '../components/listItem';
+import HorizontalList from '../components/horizontalList';
+const data = require('../Recetas.json')
 
 export default function HomeScreen(){
   return(
@@ -12,7 +14,8 @@ export default function HomeScreen(){
       <SearchBar
         placeholder="What do you want to eat?"
       />
-      <ListItem text="Peperoni Pizza Pockets" img="https://recetinas.com/wp-content/uploads/2019/09/galletas-de-chocolate-al-microondas-1.jpg"/>
+      <HorizontalList data={data.recetas} titulo={"TRENDING"} imgHeight={115} imgWidth={115}/>
+      <HorizontalList data={data.recetas} titulo={"RECENT"} imgHeight={190} imgWidth={170}/>
     </SafeAreaView>
   ); 
 }
@@ -22,4 +25,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#282828',
     paddingTop: Platform.OS === 'android' ? StatusBarManager.HEIGHT : 0,
   },
+
 });

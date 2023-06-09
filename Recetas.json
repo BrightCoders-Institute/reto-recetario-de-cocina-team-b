@@ -2,49 +2,234 @@
   "recetas": [
     {
       "id": "1",
-      "nombre": "",
-      "foto": "",
-      "ingredientes": "",
-      "preparacion": ""
+      "nombre": "Pan Nube",
+      "foto": "https://i.blogs.es/37cda4/tik-tok1/1366_2000.jpg",
+      "porciones": "9 unidades",
+      "ingredientes": [
+        {
+          "ingrediente": "Huevos",
+          "cantidad": "3 pz"
+        },
+        {
+          "ingrediente": "Queso crema",
+          "cantidad": "100 g"
+        },
+        {
+          "ingrediente": "Bicarbonato Sodico",
+          "cantidad": "1/4 de cucharadita"
+        }
+      ],
+      "preparacion": "Empezamos precalentando el horno a 150ºC. Después, separando las claras de las yemas de los huevos. Batimos las yemas con el queso crema hasta obtener una masa homogénea y suave. En un bol aparte batimos las claras a punto de nieve con el bicarbonato. Mezclamos ambas masas con la ayuda de una espátula. Colocamos una hoja de papel de hornear sobre una bandeja de horno y sobre ella repartimos 8-9 montones de masa, formando círculos. Horneamos 20 minutos."
     },
     {
       "id": "2",
-      "nombre": "",
-      "foto": "",
-      "ingredientes": "",
-      "preparacion": ""
+      "nombre": "Avena Horneada",
+      "foto": "https://i.blogs.es/de56f3/tik-tok-avena/1024_2000.jpg",
+      "porciones": "1",
+      "ingredientes": [
+        {
+          "ingrediente": "Avena",
+          "cantidad": "100 g"
+        },
+        {
+          "ingrediente": "Platano",
+          "cantidad": "1 pz"
+        },
+        {
+          "ingrediente": "Leche",
+          "cantidad": "250 ml"
+        },
+        {
+          "ingrediente": "Canela",
+          "cantidad": "1 cucharadita"
+        },
+        {
+          "ingrediente": "Vainilla",
+          "cantidad": "1 cucharadita"
+        },
+        {
+          "ingrediente": "Semillas de chia",
+          "cantidad": "10 g"
+        },
+        {
+          "ingrediente": "Sal",
+          "cantidad": "Una pizca"
+        },
+        {
+          "ingrediente": "Nueces picadas",
+          "cantidad": "15 g"
+        },
+        {
+          "ingrediente": "Arandanos",
+          "cantidad": "25 g"
+        }
+      ],
+      "preparacion": "Encender el horno a 200ºC. En un cuenco, chafar el plátano con un tenedor hasta alcanzar un puré. Agregar el resto de los ingredientes secos: avena, semillas de chía, canela, ralladura de naranja, sal e integrar con una cuchara. Incorporar los líquidos, la esencia de vainilla y la bebida vegetal. Revolver y dejar reposar 5 minutos. Volcar la mezcla en un molde de vidrio o de silicona, acomodar los arándanos, las rodajas de plátano y las nueces picadas por encima, y cocinar durante 30 minutos hasta que este dorada la superficie. Reposar 15 minutos."
     },
 
     {
       "id": "3",
-      "nombre": "",
-      "foto": "",
-      "ingredientes": "",
-      "preparacion": ""
+      "nombre": "Chips de pasta",
+      "foto": "https://i.blogs.es/6c9423/213800194_361581485385267_6080094523872781678_n/450_1000.jpg",
+      "porciones": "4",
+      "ingredientes": [
+        {
+          "ingrediente": "Pasta seca",
+          "cantidad": "500 g"
+        },
+        {
+          "ingrediente": "Queso parmesano",
+          "cantidad": "A consideracion"
+        },
+        {
+          "ingrediente": "Sal",
+          "cantidad": "Una pizca"
+        },
+        {
+          "ingrediente": "Pimienta",
+          "cantidad": "Una pizca"
+        },
+        {
+          "ingrediente": "Hojuelas de chile",
+          "cantidad": "Una pizca"
+        },
+        {
+          "ingrediente": "Aceite de oliva virgen",
+          "cantidad": "Una cucharada"
+        }
+      ],
+      "preparacion": "Cocemos la pasta, tipo rigatoni, dejándole algo blanda, en torno a un minuto por encima del tiempo indicado en el paquete. Escurrimos y ponemos en un bol grande, donde vamos a mezclarla con el resto de ingredientes. Echamos un buen chorro de aceite de olvia y sazonamos la pasta nuestro gusto. La colocamos en la bandeja de la freidora de aire y la cocinamos 10 minutos a 200º C. Durante este tiempo, debemos remover la pasta dos o tres veces. Comprobamos entonces que la pasta tenga la textura adecuada, debe estar sabrosa y muy crujiente, con un uniforme color dorado, tirando a tostado. Dependiendo de la capacidad de la freidora sin aceite y de la cantidad de pasta que prepares puede que tengas que cocinarla más tiempo. Reservamos la pasta al menos 5 minutos antes de servir."
     },
 
     {
       "id": "4",
-      "nombre": "",
-      "foto": "",
-      "ingredientes": "",
-      "preparacion": ""
+      "nombre": "Mug cake",
+      "foto": "https://i.blogs.es/ea5136/tik-tokmug-cale/1024_2000.jpg",
+      "ingredientes": [
+        {
+          "ingrediente": "Chocolate negro",
+          "cantidad": "70g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cantidad": "30 g"
+        },
+        {
+          "ingrediente": "Huevo",
+          "cantidad": "1"
+        },
+        {
+          "ingrediente": "azucar",
+          "cantidad": "10 - 20g"
+        },
+        {
+          "ingrediente": "Harina de reposteria",
+          "cantidad": "20g"
+        }
+      ],
+      "preparacion": "En un bol apto para microondas troceamos el chocolate y le añadimos la mantequilla. Derretimos a 800 W un minuto , retiramos y revolvemos, si no está todavía disuelto el chocolate le vamos dando 15 segundos vigilando que no se queme. Añadimos el huevo, removemos con unas varillas y después el azúcar y la harina, integrando con suavidad. Vertemos la mezcla en el tazón de loza en donde vayamos a cocinar el mug cake a 3/4 de su capacidad y lo cocemos al microondas un minuto a 800 W, de uno en uno si queremos preparar varios, y siempre en el borde del plato giratorio. Lo retiramos del microondas, comprobamos que esté cocido a nuestro gusto y servimos."
     },
-
     {
       "id": "5",
-      "nombre": "",
-      "foto": "",
-      "ingredientes": "",
-      "preparacion": ""
+      "nombre": "Birriamen",
+      "foto": "https://instantstore.blog/assets/uploads/2022/04/img_5267-scaled-1046x1104-c-default.jpg",
+      "porciones": "8",
+      "ingredientes": [
+        {
+          "ingrediente": "chambarete de res con hueso",
+          "cantidad": "500 gr"
+        },
+        {
+          "ingrediente": "chambarete de res sin hueso",
+          "cantidad": "800 gr"
+        },
+        {
+          "ingrediente": "chiles guajillo secos desvenados",
+          "cantidad": "4"
+        },
+        {
+          "ingrediente": "chiles pasilla secos desvenados",
+          "cantidad": "4"
+        },
+        {
+          "ingrediente": "jitomates saladet medianos",
+          "cantidad": "3"
+        },
+        {
+          "ingrediente": "tomate verde",
+          "cantidad": "350 gr"
+        },
+        {
+          "ingrediente": "zanahorias en rebanadas (opcional)",
+          "cantidad": "2"
+        },
+        {
+          "ingrediente": "chayote en cubos (opcional)",
+          "cantidad": "1"
+        },
+        {
+          "ingrediente": "calabaza en cubos (opcional)",
+          "cantidad": "1"
+        },
+        {
+          "ingrediente": "cebolla en trozos ",
+          "cantidad": "1"
+        },
+        {
+          "ingrediente": "chiles pasilla secos desvenados",
+          "cantidad": "2"
+        },
+        {
+          "ingrediente": "litros de agua ",
+          "cantidad": "2,5"
+        },
+        {
+          "ingrediente": "cubos sazonado de res ",
+          "cantidad": "2"
+        },
+        {
+          "ingrediente": "Pasta tipo ramen sin cocer",
+          "cantidad": "340gr"
+        }
+      ],
+      "preparacion": "En una olla caliente o en SALTEAR agregar aceite de aguacate y dorar la cebolla, ajos, tomates, jitomates y chiles. Agregar 1-2 tazas de agua. Pasar todo a la licuadora ACE NOVA, agregar los cubos sazonadores y programa en puré o dejar en la olla hasta que hiervan y licuar todo después. Salpimentar la carne. En la misma olla en SALTEAR, agregar aceite de aguacate y sellar, poco a poco. Regresar toda la carne a la olla, agregar el adobo pasándolo por un colador y rellenar con más agua hasta cubrir toda la carne. Agregar las zanahorias y chayotes y confirmar sazón. oner y bloquear la tapa de la Instant Pot asegurándose que la válvula de liberación de vapor esté girada hacia “sellado” (sealing). Programar CARNE/ESTOFADO por 20 MINUTOS o hasta que la carne esté suave. Una vez cocida, agregar las calabazas y dejar que se ablanden con el calor del caldo. Servir con pasta cocida, carne, caldo suficiente que cubra todo, acompaña con cilantro, cebolla, chiles y aguacate."
     },
-
     {
       "id": "6",
-      "nombre": "",
-      "foto": "",
-      "ingredientes": "",
-      "preparacion": ""
+      "nombre": "Rollos de canela",
+      "foto": "https://i.blogs.es/e85915/cinamon/650_1200.jpg",
+      "porciones": "2",
+      "ingredientes": [
+        {
+          "ingrediente": "Harina de fuerza",
+          "cantidad": "325 g"
+        },
+        {
+          "ingrediente": "Sal",
+          "cantidad": "2 g"
+        },
+        {
+          "ingrediente": "Azucar",
+          "cantidad": "35 g"
+        },
+        {
+          "ingrediente": "Huevo",
+          "cantidad": "1 pz"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cantidad": "65 g"
+        },
+        {
+          "ingrediente": "Canela Molida",
+          "cantidad": "1 pizca"
+        },
+        {
+          "ingrediente": "Azucar Glas",
+          "cantidad": "75 g"
+        }
+      ],
+      "preparacion": "En el recipiente de la amasadora mezclamos la harina y la sal. Calentamos ligeramente la leche y le añadimos el azúcar y la levadura. Removemos para integrar. Lo añadimos al recipiente con la harina y la sal junto con el huevo y mezclamos para integrar. Añadimos 50 g de la mantequilla y amasamos unos 12-14 minutos o hasta que la masa esté suave. Pasamos la masa a un recipiente engrasado, lo cubrimos con un trapo de cocina y dejamos que leve hasta duplicar su volumen. Pasado este tiempo presionamos la masa con el puño para desgasificar, hacemos con ella una bola y la transferimos a una lámina de papel sulfurizado. Estiramos con ayuda de un rodillo, dándole forma de rectángulo. Fundimos los 15 g de mantequilla restantes y mezclamos con el azúcar moreno y la canela . Extendemos la pasta resultante por encima de la masa y enrollamos formando un cilindro. Es una masa muy blanda. Cortamos el cilindro en ocho porciones y las colocamos en un molde cuadrado o rectangular engrasado. Tapamos el molde de nuevo y dejamos levar una hora más o hasta que aumenten bastante en volumen. Metemos el molde en el horno, precalentado a 175 ºC con calor arriba y abajo, donde los cocemos durante 25-30 minutos. Para el glaseado tamizamos el azúcar glasé y le añadimos el agua Cuando hayamos obtenido una consistencia espesa pero untable, decoramos los rollitos."
     }
   ]
 }

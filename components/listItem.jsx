@@ -3,23 +3,23 @@ import {Image, Text, StyleSheet, View} from 'react-native';
 
 const ListItem = (props) =>{
   return (
-    <View style={styles.container}>
+    <View style={styles(props).container}>
       <Image 
-        style={styles.img}
+        style={styles(props).img}
         source={{
           uri:props.img,
         }}/>
-      <Text style={styles.text}>{props.text}</Text>
+      <Text style={styles(props).text}>{props.text}</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const styles = (props) => StyleSheet.create({
   container: {
     marginLeft: 10,
     marginTop:15,
-    height:115,
-    width:115,
+    height:props.height,
+    width:props.width,
     flexDirection:'column',
   },
   text:{
