@@ -11,10 +11,10 @@ export default function App() {
     <NavigationContainer>
         <Stack.Navigator initialRouteName="Inicio">
           <Stack.Screen name="Inicio" component={HomeScreen}
-            options={{headerShown: false}}
+            options={{headerShown: false, animationEnabled:true}}
           />
           <Stack.Screen name="Detalle" component={DetailScreen}
-            options={{headerShown: false}}
+            options={{headerShown: false, animationEnabled:true,}}
           />
         </Stack.Navigator>
     </NavigationContainer>

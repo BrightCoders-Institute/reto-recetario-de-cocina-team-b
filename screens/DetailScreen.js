@@ -9,8 +9,9 @@ function DetailScreen({route, navigation}){
   return(
     <SafeAreaView style={styles.container}>
       <RecipeImage title={recipe.nombre} img={recipe.foto} section={"recent"} onPress={() => {navigation.goBack()}} />
-      <View style={{flex:1}}>
-      </View>
+      <ScrollView>
+        <RecipeDetail item={recipe} />
+      </ScrollView>
     </SafeAreaView>
   ); 
 }

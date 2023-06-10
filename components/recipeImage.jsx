@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === 'android' ? StatusBarManager.HEIGHT : 0,
     paddingHorizontal: 20,
     paddingBottom:40,
-    backgroundColor:'rgba(40, 40, 40,0.8)',
+    backgroundColor:'rgba(40, 40, 40,0.75)',
     justifyContent:'space-between',
   },
   row:{
