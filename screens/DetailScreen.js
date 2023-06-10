@@ -1,12 +1,23 @@
 import react from "react";
-import { Text, View } from "react-native";
+import { View, Text, ScrollView } from 'react-native';
+import {StyleSheet, SafeAreaView} from "react-native";
+import RecipeImage from "../components/recipeImage";
+import RecipeDetail from "../components/recipeDetail";
 
 function DetailScreen({route, navigation}){
-    return(
-      <View>
-        <Text>recetas bergas</Text>
+  const recipe = route.params.item;
+  return(
+    <SafeAreaView style={styles.container}>
+      <RecipeImage title={recipe.nombre} img={recipe.foto} section={"recent"} onPress={() => {navigation.goBack()}} />
+      <View style={{flex:1}}>
       </View>
-    ); 
-  }
-  
-  export default DetailScreen;
+    </SafeAreaView>
+  ); 
+}
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1,
+  },
+});
+export default DetailScreen;
