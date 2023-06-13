@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { TextInput, StyleSheet, View, TouchableOpacity, Text } from "react-native";
+import {
+  TextInput,
+  StyleSheet,
+  View,
+  TouchableOpacity,
+  Text,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Feather from "react-native-vector-icons/Feather";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -54,7 +60,12 @@ const SearchBar = ({ recipes, setFilteredRecipes }) => {
           onChangeText={handleSearch}
           onBlur={handleBlur}
         />
-        <FontAwesome style={styles.icon} name="microphone" size={20} color="#ffffff" />
+        <FontAwesome
+          style={styles.icon}
+          name="microphone"
+          size={20}
+          color="#ffffff"
+        />
       </View>
       {searchTerm.length > 0 && (
         <View style={styles.suggestionsContainer}>
@@ -86,7 +97,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingVertical: 5,
     paddingHorizontal: 7,
-    marginBottom: 30,
     marginTop: 10,
     alignItems: "center",
     justifyContent: "center",
