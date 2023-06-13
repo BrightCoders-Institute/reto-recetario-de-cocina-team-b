@@ -1,38 +1,42 @@
 import React from 'react';
 import {Image, Text, TouchableOpacity, StyleSheet, View} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-const ListItem = (props) =>{
+const ListItem = ({img, text, item, height, width, section}) =>{
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles(props).container}
-      onPress={() => {props.onPress(props.item)}}
+    <TouchableOpacity style={styles({height, width}).container}
+      onPress={() => navigation.navigate('Detalle',{item, section})}
     >
         <Image 
-          style={styles(props).img}
+          style={styles({height, width}).img}
           source={{
-            uri:props.img,
+            uri:img,
           }}/>
-        <Text style={styles(props).text}>{props.text}</Text>
+        <Text style={styles({height, width}).text}>{text}</Text>
     </TouchableOpacity>
   );
 }
 
-const styles = (props) => StyleSheet.create({
-  container: {
-    marginLeft: 10,
-    marginTop:15,
-    flex:1,
-  },
-  text:{
-    fontSize:13,
-    color: '#FFFFFF',
-    marginBottom:25,
-  },
-  img:{
-    borderRadius:4,
-    height:props.height,
-    width:props.width,
-    marginBottom: 10,
-  },
-});
+function styles({height, width}) {
+    return StyleSheet.create({
+        container: {
+            marginLeft: 10,
+            marginTop: 15,
+            flex: 1,
+        },
+        text: {
+            fontSize: 13,
+            color: '#FFFFFF',
+            marginBottom: 25,
+        },
+        img: {
+            borderRadius: 4,
+            height: height,
+            width: width,
+            marginBottom: 10,
+        },
+    });
+}
 
 export default ListItem;

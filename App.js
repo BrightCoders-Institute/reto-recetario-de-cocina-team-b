@@ -9,12 +9,14 @@ export default function App() {
   const Stack = createStackNavigator();
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="Inicio">
+        <Stack.Navigator initialRouteName="Inicio"
+          screenOptions={{
+            headerShown: false, presentation: 'modal'
+          }}
+        >
           <Stack.Screen name="Inicio" component={HomeScreen}
-            options={{headerShown: false, animationEnabled:true}}
           />
           <Stack.Screen name="Detalle" component={DetailScreen}
-            options={{headerShown: false, animationEnabled:true,}}
           />
         </Stack.Navigator>
     </NavigationContainer>

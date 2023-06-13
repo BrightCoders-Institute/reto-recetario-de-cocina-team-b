@@ -8,7 +8,7 @@ function DetailScreen({route, navigation}){
   const recipe = route.params.item;
   return(
     <SafeAreaView style={styles.container}>
-      <RecipeImage title={recipe.nombre} img={recipe.foto} section={"recent"} onPress={() => {navigation.goBack()}} />
+      <RecipeImage title={recipe.nombre} img={recipe.foto} section={route.params.section} onPress={() => {navigation.goBack()}} />
       <RecipeDetail item={recipe} />
     </SafeAreaView>
   ); 
