@@ -5,7 +5,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const SearchBar = ({ recipes, setFilteredRecipes }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [suggestions,Setsuggestions]= useState([]);
+  const [suggestions,setSuggestions]= useState([]);
 
   const handleSearch = (text) => {
     setSearchTerm(text);
