@@ -1,48 +1,24 @@
 import React from 'react';
-import {
-  Image, Text, TouchableOpacity, StyleSheet,
-} from 'react-native';
+import { Image, Text, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import StyleListItem from '../styles/StyleListItem';
 
-function ListItem({
-  img, text, item, height, width, section,
-}) {
+const ListItem = ({ img, text, item, height, width, section }) => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity
-      style={styles({ height, width }).container}
+      style={StyleListItem({ height, width }).container}
       onPress={() => navigation.navigate('Detalle', { item, section })}
     >
       <Image
-        style={styles({ height, width }).img}
+        style={StyleListItem({ height, width }).img}
         source={{
           uri: img,
         }}
       />
-      <Text style={styles({ height, width }).text}>{text}</Text>
+      <Text style={StyleListItem({ height, width }).text}>{text}</Text>
     </TouchableOpacity>
   );
-}
-
-function styles({ height, width }) {
-  return StyleSheet.create({
-    container: {
-      marginLeft: 10,
-      marginTop: 15,
-      flex: 1,
-    },
-    text: {
-      fontSize: 13,
-      color: '#FFFFFF',
-      marginBottom: 25,
-    },
-    img: {
-      borderRadius: 4,
-      height,
-      width,
-      marginBottom: 10,
-    },
-  });
-}
+};
 
 export default ListItem;
