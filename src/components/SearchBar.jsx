@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   TextInput,
   StyleSheet,
   View,
   TouchableOpacity,
   Text,
-} from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import Feather from "react-native-vector-icons/Feather";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
+} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-const SearchBar = ({ recipes, setFilteredRecipes }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+function SearchBar({ recipes, setFilteredRecipes }) {
+  const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
 
   const navigation = useNavigation();
@@ -19,15 +19,11 @@ const SearchBar = ({ recipes, setFilteredRecipes }) => {
   const handleSearch = (text) => {
     setSearchTerm(text);
 
-    const filteredRecipes = recipes.filter((recipe) =>
-      recipe.nombre.toLowerCase().includes(text.toLowerCase())
-    );
+    const filteredRecipes = recipes.filter((recipe) => recipe.nombre.toLowerCase().includes(text.toLowerCase()));
 
     setFilteredRecipes(filteredRecipes);
 
-    const searchSuggestions = recipes.filter((recipe) =>
-      recipe.nombre.toLowerCase().startsWith(text.toLowerCase())
-    );
+    const searchSuggestions = recipes.filter((recipe) => recipe.nombre.toLowerCase().startsWith(text.toLowerCase()));
 
     setSuggestions(searchSuggestions);
   };
@@ -37,9 +33,9 @@ const SearchBar = ({ recipes, setFilteredRecipes }) => {
       setSearchTerm(suggestion.nombre);
       setFilteredRecipes([suggestion]);
       setSuggestions([]);
-      navigation.navigate("Detalle", {
+      navigation.navigate('Detalle', {
         item: suggestion,
-        section: "suggestions",
+        section: 'suggestions',
       });
     }
   };
@@ -82,42 +78,42 @@ const SearchBar = ({ recipes, setFilteredRecipes }) => {
       )}
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
     marginTop: 0,
   },
   row: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   barra: {
-    backgroundColor: "#343435",
+    backgroundColor: '#343435',
     marginHorizontal: 10,
     borderRadius: 10,
     paddingVertical: 5,
     paddingHorizontal: 7,
     marginTop: 10,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   input: {
     flex: 1,
     paddingLeft: 5,
-    color: "#f5fdff",
+    color: '#f5fdff',
   },
   suggestionsContainer: {
-    flexDirection: "column",
+    flexDirection: 'column',
     marginLeft: 10,
     marginBottom: 10,
     marginTop: -10,
-    backgroundColor: "#343435",
+    backgroundColor: '#343435',
     borderRadius: 10,
     maxHeight: 100,
     paddingHorizontal: 7,
     paddingVertical: 2,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     maxWidth: 370,
   },
   suggestionItem: {
@@ -125,7 +121,7 @@ const styles = StyleSheet.create({
   },
   suggestionText: {
     fontSize: 16,
-    color: "#f5fdff",
+    color: '#f5fdff',
   },
 });
 

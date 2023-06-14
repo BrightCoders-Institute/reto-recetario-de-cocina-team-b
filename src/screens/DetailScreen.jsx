@@ -1,8 +1,7 @@
-import react from "react";
-import { View, Text, ScrollView } from "react-native";
-import { StyleSheet, SafeAreaView } from "react-native";
-import RecipeImage from "../components/recipeImage";
-import RecipeDetail from "../components/recipeDetail";
+import React from 'react';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import RecipeImage from '../components/recipeImage';
+import RecipeDetail from '../components/recipeDetail';
 
 function DetailScreen({ route, navigation }) {
   const recipe = route.params.item;

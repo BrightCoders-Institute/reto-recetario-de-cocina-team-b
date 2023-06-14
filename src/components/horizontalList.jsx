@@ -1,8 +1,12 @@
-import React from "react";
-import { FlatList, Text, StyleSheet, View } from "react-native";
-import ListItem from "./listItem";
+import React from 'react';
+import {
+  FlatList, Text, StyleSheet, View,
+} from 'react-native';
+import ListItem from './listItem';
 
-const HorizontalList = ({ titulo, data, imgHeight, imgWidth }) => {
+function HorizontalList({
+  titulo, data, imgHeight, imgWidth,
+}) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{titulo}</Text>
@@ -19,11 +23,11 @@ const HorizontalList = ({ titulo, data, imgHeight, imgWidth }) => {
           />
         )}
         keyExtractor={(item) => item.id}
-        horizontal={true}
+        horizontal
       />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -31,9 +35,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   text: {
-    color: "#C21E6A",
+    color: '#C21E6A',
     fontSize: 30,
-    textTransform: "uppercase",
+    textTransform: 'uppercase',
   },
 });
 

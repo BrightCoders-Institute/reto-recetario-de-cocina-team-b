@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
   SafeAreaView,
   Platform,
   NativeModules,
-} from "react-native";
+} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import SearchBar from '../components/SearchBar';
+import HorizontalList from '../components/horizontalList';
+
 const { StatusBarManager } = NativeModules;
-import { StatusBar } from "expo-status-bar";
-import SearchBar from "../components/SearchBar";
-import HorizontalList from "../components/horizontalList";
 
-const data = require("../Recetas.json");
+const data = require('../../Recetas.json');
 
-export default function HomeScreen({ navigation }) {
+export default function HomeScreen() {
   const [filteredRecipes, setFilteredRecipes] = useState(data.recetas);
 
   return (
@@ -26,13 +27,13 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.contentContainer}>
         <HorizontalList
           data={data.recetas}
-          titulo={"TRENDING"}
+          titulo="TRENDING"
           imgHeight={115}
           imgWidth={115}
         />
         <HorizontalList
           data={data.recetas}
-          titulo={"RECENT"}
+          titulo="RECENT"
           imgHeight={190}
           imgWidth={170}
         />
@@ -44,8 +45,8 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#282828",
-    paddingTop: Platform.OS === "android" ? StatusBarManager.HEIGHT : 0,
+    backgroundColor: '#282828',
+    paddingTop: Platform.OS === 'android' ? StatusBarManager.HEIGHT : 0,
   },
   contentContainer: {
     flex: 1,
