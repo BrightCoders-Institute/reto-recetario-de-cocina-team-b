@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   ImageBackground,
   TouchableOpacity,
@@ -6,11 +6,12 @@ import {
   StyleSheet,
   Text,
   View,
-} from "react-native";
-const { StatusBarManager } = NativeModules;
-import EvilIcons from "react-native-vector-icons/EvilIcons";
+} from 'react-native';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
-const RecipeImage = (props) => {
+const { StatusBarManager } = NativeModules;
+
+function RecipeImage(props) {
   return (
     <ImageBackground source={{ uri: props.img }} style={styles.container}>
       <View style={styles.content}>
@@ -40,7 +41,7 @@ const RecipeImage = (props) => {
       </View>
     </ImageBackground>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -48,29 +49,29 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBarManager.HEIGHT : 0,
+    paddingTop: Platform.OS === 'android' ? StatusBarManager.HEIGHT : 0,
     paddingHorizontal: 20,
     paddingBottom: 40,
-    backgroundColor: "rgba(40, 40, 40,0.75)",
-    justifyContent: "space-between",
+    backgroundColor: 'rgba(40, 40, 40,0.75)',
+    justifyContent: 'space-between',
   },
   row: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   rowSpace: {
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   icon: {
     marginHorizontal: 5,
   },
   textSection: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
     fontSize: 20,
-    textTransform: "uppercase",
+    textTransform: 'uppercase',
   },
   textTitle: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
     fontSize: 25,
   },
 });

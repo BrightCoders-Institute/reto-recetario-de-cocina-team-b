@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import React, { useState } from 'react';
+import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
 const RecipeDetail = (props) => {
   const item = props.item;
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 20,
     flex: 1,
-    backgroundColor: "#282828",
+    backgroundColor: '#282828',
   },
   textTitle: {
     color: "#FFFFFF",
@@ -40,14 +40,14 @@ const styles = StyleSheet.create({
   item: {
     flex: 1,
     marginTop: 25,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottomColor: "#2E2E2E",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderBottomColor: '#2E2E2E',
     borderBottomWidth: 2,
   },
   itemText: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
     fontSize: 16,
     paddingBottom: 15,
   },
