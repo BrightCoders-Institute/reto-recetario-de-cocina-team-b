@@ -9,6 +9,7 @@ const ListItem = ({ img, text, item, height, width, section }) => {
     <TouchableOpacity
       style={StyleListItem({ height, width }).container}
       onPress={() => navigation.navigate('Detalle', { item, section })}
+      testID='buttonNavigation'
     >
       <Image
         style={StyleListItem({ height, width }).img}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, NativeModules } from 'react-native';
+import { StyleSheet, NativeModules,Platform } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 const { StatusBarManager } = NativeModules;
 
