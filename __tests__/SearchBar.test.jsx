@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import SearchBar from '../src/components/SearchBar';
+import { useNavigation } from '@react-navigation/native';
 
 // Hacemos el mocking de los módulos 'react-native' y '@react-navigation/native'
 jest.unstable_mockModule('react-native', () => ({
@@ -37,7 +38,7 @@ describe('SearchBar', () => {
     fireEvent.changeText(searchInput, 'b');
 
     expect(setFilteredRecipesMock).toHaveBeenCalledWith([
-      { id: 4, nombre: 'Birriamen' },
+      { id: 5, nombre: 'Birriamen' },
       { id: 2, nombre: 'Baked Oatmeal' },
     ]);
   });

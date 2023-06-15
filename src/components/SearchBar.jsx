@@ -6,8 +6,7 @@ import {
   Text,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import Feather from 'react-native-vector-icons/Feather';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {Feather,  FontAwesome} from '@expo/vector-icons';
 import StyleSearchBar from '../styles/StyleSearchBar'; 
 
 function SearchBar({ recipes, setFilteredRecipes }) {
