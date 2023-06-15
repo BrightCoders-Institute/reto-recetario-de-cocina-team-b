@@ -1,11 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import ListItem from '../src/components/listItem';
-import { createNativeStackNavigator } from 'react-native-screens/native-stack';
-import DetailScreen from '../src/screens/DetailScreen';
-
-const Stack = createNativeStackNavigator();
+import { useNavigation } from '@react-navigation/native';
 
 const item = {
   id: "1",
@@ -28,28 +24,24 @@ const item = {
   ]
 }
 
+jest.mock('@react-navigation/native');
+
 test('Navigates on pressing item', () => {
-  const push = jest.fn();
-  const { getByTestId } = render(
-    <NavigationContainer>
-       <Stack.Navigator>
-        <Stack.Screen name="List" component={ListItem} initialParams={{ item, section: 'RECENT' }} />
-        <Stack.Screen
-          name="Detalle"
-          component={DetailScreen}
-        />
-        {/* <ListItem
-          img={item.foto}
-          text={item.nombre}
-          item={item}
-          height={115}
-          width={115}
-          section='RECENT'
-          navigation={{ push }}
-        /> */}
-        </Stack.Navigator>
-    </NavigationContainer>
-  );
-  fireEvent.press(getByTestId('buttonNavigation'));
-  expect(push).toHaveBeenCalledWith('Detalle');
+  const navigateMock = jest.fn();
+  useNavigation.mockReturnValue({ navigate: navigateMock });
+
+  const { getByTestId } = render(<ListItem item={item} 
+    img={item.foto}
+    text={item.nombre}
+    height={115}
+    width={115}
+    section={'TRENDING'}
+    />);
+  const button = getByTestId('buttonNavigation');
+  fireEvent.press(button);
+  
+  expect(navigateMock).toHaveBeenCalledWith('Detalle', {
+    item: item,
+    section: 'TRENDING', // Actualiza esto según el valor de la sección en tu componente HorizontalList
+  });
 });

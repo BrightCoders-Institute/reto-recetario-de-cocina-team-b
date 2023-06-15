@@ -15,6 +15,7 @@ jest.unstable_mockModule('@react-navigation/native', () => ({
     navigate: jest.fn(),
   })),
 }));
+jest.mock('@react-navigation/native');
 
 describe('SearchBar', () => {
   const recipes = [
@@ -56,6 +57,7 @@ describe('SearchBar', () => {
   it('navigates to detail screen when suggestion is pressed', () => {
     const setFilteredRecipesMock = jest.fn();
     const navigateMock = jest.fn();
+    useNavigation.mockReturnValue({ navigate: navigateMock });
 
     const { getByPlaceholderText, getByText } = render(
       <SearchBar
