@@ -1,4 +1,3 @@
-```
 ![BrightCoders Logo](img/logo.png)
 # Aplicación de Recetas
 Este repositorio contiene el proyecto de aplicación móvil para el Equipo B de la Aplicación de Recetas, desarrollado con React Native como parte del programa de entrenamiento en el Instituto BrightCoders.
@@ -73,4 +72,3 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 El equipo de desarrollo revisará tu solicitud y proporcionará comentarios lo antes posible.
 ## Contacto
 Si tienes alguna pregunta o sugerencia con respecto al proyecto, no dudes en visitar nuestro espacio de colaboración en Gather.town: [Campus Zeffo ](https://app.gather.town/app/Xqjd4OwO4fzoQAHV/campus-zeffo).
-```
